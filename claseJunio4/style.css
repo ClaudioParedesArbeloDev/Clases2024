@@ -1,0 +1,146 @@
+.gradienteLineal{
+    background-image: linear-gradient(to top, red, blue);
+    height: 80px;
+}
+
+.gradienteLineal2{
+    background-image: linear-gradient(yellow, blue);
+    height: 80px;
+}
+
+.gradienteLineal3{
+    background-image: linear-gradient(to left, red, gray);
+    height: 80px;
+}
+
+.gradienteRadial{
+    background-image: radial-gradient(blue, yellow);
+    height: 180px;
+}
+
+.gradientePagina{
+    height: 150px;
+    background: rgb(196,2,184);
+    background: linear-gradient(180deg, rgba(196,2,184,1) 0%, rgba(0,183,255,1) 100%); 
+}
+
+.btnTraslate{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnTraslate:hover{
+    transform: translate(20px, 30px);
+}
+
+.btnRotate{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnRotate:hover{
+    transform: rotate(-30deg);
+}
+
+.btnRotateX{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnRotateX:hover{
+    transform: rotateX(50deg);
+}
+
+.btnRotateY{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnRotateY:hover{
+    transform: rotateY(50deg);
+}
+
+.btnRotateZ{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnRotateZ:hover{
+    transform: rotateZ(50deg);
+}
+
+.btnScale{
+    background: pink;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.btnScale:hover{
+    transform: scale(110%);
+}
+
+.input{
+    background: gray;
+    width: 150px;
+    height: 40px;
+    border: none;
+    padding: 15px;
+    color: #fff;
+}
+
+.input:focus{
+    background: crimson;
+    width: 180px;
+    height: 60px;
+    border: 2px solid greenyellow;
+    transition: width 2s, height 4s, background 2s;
+}
+
+.animacion{
+    width: 400px;
+    height: 200px;
+    background: gray;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+@keyframes efecto{
+    0% {width: 100px;}
+    50%{width: 200px;
+        background: green;}
+    100%{width: 400px;
+        background: red;
+        }
+}
+
+.animationImg{
+    width: 400px;
+    animation-name: foto;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 5s;
+
+}
+
+@keyframes foto{
+    0%{width: 100px;}
+    50%{width: 400px;}
+    100%{width: 300px;}
+}
+
+
