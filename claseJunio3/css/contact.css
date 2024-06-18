@@ -102,6 +102,7 @@ main{
     label{
         padding: 10px;
     }
+    
     input{
         background: #d69e60;
         border: none;
@@ -115,6 +116,7 @@ main{
         padding: 10px;
         border-radius: 10px;
         width: 500px;
+        resize: none;
     }
 }
 
