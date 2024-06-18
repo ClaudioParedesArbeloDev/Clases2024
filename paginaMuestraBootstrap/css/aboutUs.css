@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+}
+
+.headerIndex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background: #4d4d4d;
+    border-bottom: 2px solid #a39c67
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 2.4em;
+        color: #d69e60;
+        margin: 10px;
+    }
+    i:hover{
+        transform: scale(120%);
+        transition: .2s;
+        color: #ff704d;
+    }
+    a{
+        text-decoration: none;
+    }
+    h2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
+        color: #d69e60;
+    }
+    h2:hover{
+        transform: scale(120%);
+        transition: .2s;
+        color: #ff704d;
+    }
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+}
+
+.btnNavbar{
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background: #d69e60;
+    border-radius: 12px;
+    color: #4d4d4d;
+}
+.btnNavbar:hover{
+    transform: scale(120%);
+    transition: .2s;
+    background: #ff704d;    
+}
+
+.hamburguer{
+    display: none;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    color: #d69e60;
+    i{
+        font-size: 1.4em;
+        margin: 15px;
+        cursor: pointer;
+    }
+    i:hover{
+        transform: scale(120%);
+        transition: .2s;
+        color: #ff704d;
+    }
+    p{
+        cursor: pointer;
+        margin: 5px;
+    }
+    p:hover{
+        transform: scale(120%);
+        transition: .2s;
+        color: #ff704d;
+    }
+}
+.mainAboutus{
+    background: #637566;
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin: 40px;
+        color:  #d69e60;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2em;
+        line-height: 2em;
+        width: 60%;
+        text-align: justify;
+    }
+}
+
+.titleAboutUs{
+    color:  #d69e60;
+    font-family: "Roboto", sans-serif;
+    padding: 40px;
+}
+
+footer{
+    background: #4d4d4d;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #a39c67;
+}
+
+.socialMedia{
+    display: flex;
+    i{
+        margin: 15px;
+        color: #d69e60;
+        font-size: 2em;
+    }
+    i:hover{
+        color: #ff704d;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerIndex{
+        justify-content: space-around;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+        color: #d69e60;
+        font-size: 2em;
+    }
+
+    .login{
+        flex-direction: column-reverse;
+    }
+
+    .mainAboutus{
+        display: flex;
+        height: auto;
+    }
+
+    .titleAboutUs{
+        padding: 10px;
+        margin: 0px;
+
+    }
+
+}
