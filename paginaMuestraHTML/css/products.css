@@ -87,6 +87,10 @@
     }
 }
 
+.hamburguer{
+    display: none;
+}
+
 .mainProducts{
     background: #637566;
     padding: 40px;
@@ -141,4 +145,25 @@ footer{
         color: #ff704d;
         transition: .3s;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .headerIndex{
+        justify-content: space-between;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+        color: #d69e60;
+        font-size: 2em;
+    }
+
+    .login{
+        flex-direction: column-reverse;
+    }
+
 }

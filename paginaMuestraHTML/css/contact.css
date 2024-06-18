@@ -86,6 +86,10 @@
         color: #ff704d;
     }
 }
+
+.hamburguer{
+    display: none;
+}
 main{
     background: #637566;
     display: flex;
@@ -149,5 +153,36 @@ footer{
     i:hover{
         color: #ff704d;
         transition: .3s;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerIndex{
+        justify-content: space-around;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+        color: #d69e60;
+        font-size: 2em;
+    }
+
+    .login{
+        flex-direction: column-reverse;
+    }
+
+    .formContact{
+        width: 90vw;
+        input{
+            width: 80vw;
+        }
+
+        textarea{
+            width: 80vw;
+        }
     }
 }
