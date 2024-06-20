@@ -1,0 +1,38 @@
+@import "../colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $primaryColor;
+    color: $textColor;
+    padding: 20px;
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__img{
+            width: 80px;
+        }
+        &__img:hover{
+            transform: scale(120%);
+            transition: .3s;
+        }
+        &__p{
+            font-family: "Titillium Web", sans-serif;
+        }
+    }
+    &__nav{
+        display: flex;
+        &__li{
+            list-style: none;
+            color: $primaryColor;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            background: $lightColor;
+            border-radius: 10px;
+        }
+    }
+}
