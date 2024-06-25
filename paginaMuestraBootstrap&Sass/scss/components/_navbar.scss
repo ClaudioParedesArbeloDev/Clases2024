@@ -34,5 +34,11 @@
             background: $lightColor;
             border-radius: 10px;
         }
+        &__li:hover{
+            color: $textColor;
+            background: $secondaryColor;
+            transform: scale(110%);
+            transition: .3s;
+        }
     }
 }
